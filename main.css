@@ -1,0 +1,591 @@
+* {
+    margin: 0 0;
+
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 0;
+}
+
+.navigation {
+    margin: 0 0;
+    width: 1260px;
+    position: fixed;
+    background: white;
+    top: 0;
+    padding: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation .item {
+
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-right: 50px;
+    color: #131313;
+    cursor: pointer;
+    display: inline-block;
+
+
+
+}
+
+.navigation .item a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: 0, 3s linear all;
+
+
+}
+
+.navigation .active {
+    color: #2785f7;
+}
+
+.navigation a:hover {
+    color: #2785f7;
+    border: 2px solid #2785f7;
+}
+
+.grey {
+    width: 1260px;
+    height: 500px;
+    background-color: rgba(192, 192, 192, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.containerFlex {
+    width: 1000px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.containerFlex .parent .image {
+    margin-left: 60px;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://24tv.ua/resources/photos/news/202106/1662719.jpg?v=1661261979000);
+    border-radius: 50px;
+    background-size: cover;
+}
+
+.parent {
+    align-content: flex-start;
+    text-align: center;
+    padding-top: 50px;
+    width: 200px;
+    height: 150px;
+    margin-right: 40px;
+
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.parent::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0;
+    background-image: url(https://t4.ftcdn.net/jpg/03/46/38/39/360_F_346383913_JQecl2DhpHy2YakDz1t3h0Tk3Ov8hikq.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s linear all;
+}
+
+.parent:hover::after {
+    width: 100%;
+}
+
+.parentOne {
+    margin-top: 50px;
+    align-content: flex-start;
+    text-align: center;
+    padding-top: 50px;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.parentOne::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEF337pJ4DZvXQJUimjA3AY5I7Yh_k2OUWQ&s);
+    background-size: cover;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s linear all;
+}
+
+.parentOne:hover::after {
+    width: 100%;
+}
+
+.containerFlex .parentOne .image {
+    margin-left: 60px;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://24tv.ua/resources/photos/news/202106/1662719.jpg?v=1661261979000);
+    border-radius: 50px;
+    background-size: cover;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    border: 2px solid blue;
+    max-width: 700px;
+}
+
+.flexContainer div {
+    width: 120px;
+    height: 60px;
+    background: beige;
+    border: 1px solid black;
+}
+
+.Team input {
+    width: 20px;
+    height: 20px;
+}
+
+.Rex {
+    margin-top: 30px;
+    width: 800px;
+    height: 300px;
+    margin-left: 200px;
+}
+
+.Flex {
+    display: flex;
+    width: 850px;
+    height: 30px;
+    justify-content: space-between;
+
+
+}
+
+.Flex .Lesson {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2785f7;
+    margin-left: 20px;
+}
+
+.FlexOne {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s linear all;
+}
+
+.FlexOne .Team {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexOne:hover {
+    border-color: white;
+    background-color: white;
+}
+
+
+.Team:hover {
+    background-color: white;
+}
+
+.FlexTwo {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s linear all;
+}
+
+.FlexTwo .Team {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexTwo:hover {
+    border-color: white;
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+
+.Team:hover {
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexThree {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s linear all;
+}
+
+.FlexThree .Team {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexThree:hover {
+    border-color: white;
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+
+.Team:hover {
+    border-color: white;
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexFour {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s linear all;
+}
+
+.FlexFour .Team {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexFour:hover {
+    border-color: white;
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+
+.Team:hover {
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexFive {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s linear all;
+}
+
+.FlexFive .Team {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s linear all;
+}
+
+.FlexFive:hover {
+    border-color: white;
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+
+.Team:hover {
+    background-color: white;
+    transition: background-color 0.3s linear all;
+}
+
+.Team i {
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgray;
+}
+
+.images {
+    width: 50px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+
+}
+
+.images .icon {
+    color: gray;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: white 0.3s linear all
+}
+
+.images .icon:hover {
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #2785f7;
+    background-color: #2785f7;
+    color: white;
+    border-radius: 10%;
+
+}
+
+.huge {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.ContainerOne {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerOne .html {
+    width: 480px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.html p {
+    color: gray;
+    font-size: 15px;
+}
+
+.html h1 {
+    font-size: 20px;
+}
+
+.three {
+    margin-top: 30px;
+    width: 1000px;
+    display: flex;
+
+}
+
+.two {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small {
+    width: 600px;
+    height: 80px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+.small h1 {
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.small p {
+    color: gray;
+    font-size: 15px;
+}
+
+.small.tired {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small.tired i {
+    font-size: 50px;
+    color: #2785f7;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.three .text {
+    width: 380px;
+    margin-left: 20px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 10px;
+}
+
+.three .text i {
+    font-size: 100px;
+    color: darkblue;
+}
+
+.three.text h1 {
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.three .text p {
+    color: gray;
+    font-size: 15px;
+}
+
+.frame {
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 400px;
+    height: 350px;
+    border: 2px dashed #2785f7;
+    border-radius: 5px;
+    background-color: #2785f7;
+
+}
+
+.form {
+
+    margin-left: 45px;
+    width: 300px;
+    height: auto;
+
+}
+
+.yourname {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.email {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+
+.fieldset {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.select {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    width: 290px;
+    height: 50px;
+    resize: none;
+
+
+}
+
+.feedback {
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #2785f7;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    position: relative;
+}
+
+.feedback::after {
+    position: absolute;
+    content: "Ваша думка важлива!";
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: gold;
+    color: #2785f7;
+    position: absolute;
+    transition: 0.4s linear all;
+    right: 0;
+    top: 0;
+}
+
+.feedback:hover::after {
+    width: 100%;
+
+}
+
+
+
+.submit {
+    height: 20px;
+    width: 100px;
+    margin-left: 100px;
+}
+
+
+input:focus {
+    background-color: beige;
+}
+
+.complited {
+    margin-top: 300px;
+
+}
